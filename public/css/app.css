@@ -1,0 +1,451 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);/*------------------------------------------------------------
+	Default
+------------------------------------------------------------*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+button,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 1em;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+table,
+input,
+textarea,
+select,
+option,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+table,
+input,
+textarea,
+select,
+option {
+  line-height: 1.1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+img {
+  vertical-align: top;
+}
+
+a:hover,
+a:hover img {
+  opacity: 0.80;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=80)";
+}
+
+.p-login {
+  font-family: '../fonts/Poppins-Regular.ttf', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #ebeeef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-login__content {
+  width: 672px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 675px) {
+  .p-login__content {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.p-login .content-top {
+  width: 100%;
+  height: 182px;
+  background: url(/images/bg-01.jpg?ff63ad61d10509fabeb13ec7e810e233) no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .p-login .content-top {
+    height: 125px;
+    font-size: 2rem;
+  }
+}
+
+.p-login .content-top::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 84, 99, 0.7);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.p-login h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 4rem;
+}
+
+.p-login .content-form {
+  padding: 60px 80px;
+}
+
+@media screen and (max-width: 675px) {
+  .p-login .content-form {
+    padding: 30px 40px;
+  }
+}
+
+.p-login .content-form dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-login .content-form dt {
+  width: 20%;
+  color: #808080;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .p-login .content-form dt {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.p-login .content-form dd {
+  color: #808080;
+  width: 80%;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+@media screen and (max-width: 500px) {
+  .p-login .content-form dd {
+    width: 100%;
+  }
+}
+
+.p-login .content-form dd input[type="text"] {
+  font-family: '../fonts/Poppins-Regular.ttf', sans-serif;
+  font-size: 1.6rem;
+  color: #555555;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0 5px;
+  outline: none;
+  border: none;
+  height: 45px;
+  border-bottom: 1px solid #b2b2b2;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.p-login .content-form dd input[type="text"]:focus-within {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  border-bottom: 1px solid #57b846;
+}
+
+.p-login .content-form dd ::-webkit-input-placeholder {
+  color: #b5b5b5;
+  opacity: 1;
+  /* Firefox */
+}
+
+.p-login .content-form dd :-ms-input-placeholder {
+  color: #b5b5b5;
+  opacity: 1;
+  /* Firefox */
+}
+
+.p-login .content-form dd ::-ms-input-placeholder {
+  color: #b5b5b5;
+  opacity: 1;
+  /* Firefox */
+}
+
+.p-login .content-form dd ::placeholder {
+  color: #b5b5b5;
+  opacity: 1;
+  /* Firefox */
+}
+
+.p-login .content-form dd :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b5b5b5;
+}
+
+.p-login .content-form dd ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b5b5b5;
+}
+
+.p-login .content-form label {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  float: left;
+}
+
+.p-login .content-form label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.p-login .content-form label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #808080;
+  background-color: #eee;
+}
+
+.p-login .content-form label .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  width: 4px;
+  height: 8px;
+  display: none;
+  border: solid #57b846;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.p-login .content-form label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.p-login .content-form p {
+  float: right;
+}
+
+.p-login .content-form p a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #808080;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.p-login .content-form p a:hover {
+  color: #57b846;
+}
+
+.p-login .content-form .login-btn {
+  padding-left: 92px;
+}
+
+@media screen and (max-width: 500px) {
+  .p-login .content-form .login-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.p-login .content-form .login-btn button {
+  width: 165px;
+  height: 50px;
+  background-color: #57b846;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .p-login .content-form .login-btn button {
+    font-size: 1.5rem;
+    width: 150px;
+    height: 35px;
+  }
+}
+
+.p-login .content-form .login-btn button:hover {
+  background-color: #333333;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navbar-laravel {
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
