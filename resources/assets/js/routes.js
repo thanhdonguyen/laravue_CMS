@@ -3,7 +3,7 @@ import Login from './components/Login'
 
 export const routes= [
     {
-        path: '/',
+        path: '/dashboard',
         component: Dashboard
     },
     {

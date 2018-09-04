@@ -1,13 +1,13 @@
 
 require('./bootstrap');
-import Vue from 'vue'
-import VueRouter from 'vue-route'
-import Vuex from 'vuex'
-import {routes} from './routes'
-import MainApp from './components/MainApp'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Vuex from 'vuex';
+import {routes} from './routes';
+import MainApp from './components/MainApp.vue';
 
-Vue.use(VueRouter)
-Vue.use(Vuex)
+Vue.use(VueRouter);
+Vue.use(Vuex);
 
 const router = new VueRouter({
     routes,
